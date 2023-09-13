@@ -1,0 +1,207 @@
+:root {
+  --bg-header: rgb(249, 250, 251);
+  --text-red: rgba(255, 0, 166, 1);
+  --text-color: #3a3d42;
+  --bg-app: rgb(235, 237, 240);
+}
+@font-face {
+  font-family: "iransans";
+  src: url(../font/sans/Sans\ a4fran3.ttf);
+}
+@keyframes cycle {
+  0% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(-60px);
+  }
+  30% {
+    transform: translateY(-115px);
+  }
+  45% {
+    transform: translateY(-170px);
+  }
+  60% {
+    transform: translateY(-230px);
+  }
+  75% {
+    transform: translateY(-295px);
+  }
+  90% {
+    transform: translateY(-350px);
+  }
+  100% {
+    transform: translateY(-360px);
+  }
+}
+* {
+  font-family: "iransans";
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  line-height: 2.5rem;
+}
+
+/*common::begin*/
+.search--div,
+.header--button,
+.app_buttom {
+  background-color: var(--text-red);
+}
+footer,
+header {
+  background-color: var(--bg-header);
+}
+/*common::end*/
+
+/*header::begin*/
+
+.header--img {
+  background-image: url(../img/heder.png);
+  width: 50%;
+  height: 85%;
+  background-size: cover;
+  background-position: 100% 0%;
+}
+header {
+  height: 90vh;
+}
+.header--input {
+  outline: none;
+}
+
+.header--button {
+  border-color: var(--text-red) !important;
+}
+
+.header--searchbox {
+  min-width: max-content;
+  max-width: 40%;
+}
+.header--searchbox span {
+  width: 34px;
+  height: 34px;
+}
+.sefaresh,
+.nav,
+.sign {
+  z-index: 3;
+}
+.nav {
+  background-color: rgba(255, 255, 255, 0.6);
+  overflow: auto;
+  backdrop-filter: blur(2rem);
+  width: 100%;
+}
+.nav p {
+  font-size: 0.75rem;
+}
+.sefaresh--bar {
+  width: max-content;
+  height: 3.75rem;
+  animation: cycle 10s;
+  transition: cubic-bezier(0.64, 0.57, 0.67, 1.53) 0s;
+  animation-iteration-count: infinite;
+}
+
+.sefaresh--bar > p {
+  color: var(--text-red);
+  align-items: center;
+  height: 3.75rem;
+  display: flex;
+  margin: 0%;
+}
+/*header::end*/
+
+/*popup_box::begin*/
+.popup--div {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.37);
+  z-index: 10;
+  top:-1.6%;
+}
+.popup--box {
+  width: 30%;
+  min-width: 240px;
+
+  height: 320px;
+  transform: translate(-50%, -50%);
+}
+.popup--buttom {
+  color: rgb(166, 170, 173);
+  background-color: rgb(237, 239, 240);
+  border-color: rgb(237, 239, 240);
+}
+
+.popup--close:hover {
+  cursor: pointer;
+}
+.popup--div {
+  visibility: hidden;
+}
+
+.popup--div.opener {
+  visibility: visible;
+}
+.popup--div.closer {
+  visibility: hidden;
+}
+/*popup_box::end*/
+/*dastebandi::begin*/
+
+.dastebandi {
+  min-height: 50vh;
+  max-height: max-content;
+}
+.dastebandi--p {
+  width: max-content;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.dastebandi--div {
+  min-width: initial;
+}
+.dastebandi--div span {
+  color: var(--text-red);
+  transition-duration: 1s;
+}
+.dastebandi--p:hover > span {
+  transform: translateX(-5px);
+  transition-duration: 1s;
+}
+/*dastebandi::end*/
+/*app::begin*/
+.app {
+  background-color: var(--bg-app);
+}
+
+.app-buttom {
+  width: 130px;
+  height: 40px;
+}
+
+.app--inputs {
+  width: 300px;
+  min-width: min-content;
+}
+.app--inputs_p {
+  font-size: 0.8rem;
+}
+/*app::end*/
+/*shahr::begin*/
+.asami {
+  height: max-content;
+}
+.asami--div p ,.footer--a p{
+  font-size: 0.75rem;
+}
+/*shahr::begin*/
+/*footer:begin*/
+.footer--p{
+    font-size: smaller;
+}
+.footer--heading {
+    color: var(--text-red);
+  }
+/*footer:end*/
+

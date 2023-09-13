@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../library/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css"
+    />
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/medias.css" />
+    <link
+      rel="stylesheet"
+      href="../css/mobile.css"
+      media="screen and (max-width:575px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/tablet.css"
+      media="screen and (max-width:992px) and (min-width:576px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/desktop.css"
+      media="screen and (min-width:993px)"
+    />
+    <link rel="stylesheet" href="../js/popup.js" /> 
+    <link rel="icon" href="../img/icon.png">
+    <title>snapfood</title>
+  </head>
+  <body class="position-relative">
+    <!-- popup-box::begin -->
+    <div
+      class="container-fluid popup--div position-absolute start-0 position-relative"
+    >
+      <form
+        action="#"
+        class="popup--box bg-white position-absolute top-50 start-50 rounded-4 p-3"
+      >
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="material-icons fs-3 fw-lighter popup--close">
+            close
+          </span>
+          <img src="../img/logo.png" alt="logo" width="65px" />
+        </div>
+
+        <div>
+          <span class="fw-bold fs-3">ورود</span>
+          <span class="fs-3">یا</span> <span class="fw-bold fs-3">عضویت</span>
+        </div>
+
+        <div class="d-flex flex-column justify-content-start mt-4">
+          <label for="#">شماره تلفن‌همراه</label>
+          <input
+            type="text"
+            pattern="[0]{1}[9]{1}[0-9]{9}"
+            class="border border-1 rounded-3 p-2"
+          />
+          <p class="fw-lighter opacity-75">شماره با ۰۹ شروع می‌شود</p>
+        </div>
+
+        <div>
+          <button
+            type="submit"
+            class="w-100 fs-5 popup--buttom border-0 p-2 fw-bold rounded-3"
+          >
+            ادامه
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- popup-box::end -->
+
+    <!-- header::begin -->
+    <header
+      class="container mt-sm-5 mb-5 p-3 p-sm-5 d-flex flex-column justify-content-between position-relative"
+    >
+      <div
+        class="header--img position-absolute bottom-0 start-0 zindex-dropdown"
+      ></div>
+      <!-- div--logo & sign ::begin-->
+      <div class="d-flex justify-content-between align-items-center sign">
+        <img src="../img/logo.png" alt="logo" width="150px" />
+
+        <div class="d-none d-lg-flex justify-content-between header--sign">
+          <div class="p-3 d-flex align-items-center justify-content-between">
+            <svg
+              width="24"
+              height="26"
+              viewBox="0 0 24 26"
+              fill="#3A3D42"
+              xmlns="http://www.w3.org/2000/svg"
+              class="m-2"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.10557 3.22149C3.27497 2.8827 3.62123 2.6687 4 2.6687H19.9987C20.3773 2.6687 20.7235 2.88259 20.893 3.22125L22.8943 7.22124C22.9638 7.36016 23 7.51336 23 7.6687V8.6687C23 9.62235 22.6186 10.4869 22 11.1182V21.6687C22 22.221 21.5523 22.6687 21 22.6687H15C14.4477 22.6687 14 22.221 14 21.6687V17.1687C14 16.0641 13.1046 15.1687 12 15.1687C10.8954 15.1687 10 16.0641 10 17.1687V21.6687C10 22.221 9.55229 22.6687 9 22.6687H3C2.44772 22.6687 2 22.221 2 21.6687V11.1182C1.38141 10.4869 1 9.62235 1 8.6687V7.6687C1 7.51345 1.03615 7.36034 1.10557 7.22149L3.10557 3.22149ZM4 12.1333V20.6687H8V17.1687C8 14.9596 9.79086 13.1687 12 13.1687C14.2091 13.1687 16 14.9596 16 17.1687V20.6687H20V12.1333C19.8367 12.1566 19.6698 12.1687 19.5 12.1687C18.5207 12.1687 17.6353 11.7665 17 11.1182C16.3647 11.7665 15.4793 12.1687 14.5 12.1687C13.5207 12.1687 12.6353 11.7665 12 11.1182C11.3647 11.7665 10.4793 12.1687 9.5 12.1687C8.52065 12.1687 7.63526 11.7665 7 11.1182C6.36474 11.7665 5.47935 12.1687 4.5 12.1687C4.33024 12.1687 4.1633 12.1566 4 12.1333ZM21 7.90491V8.6687C21 9.49713 20.3284 10.1687 19.5 10.1687C18.6716 10.1687 18 9.49713 18 8.6687C18 8.11642 17.5523 7.6687 17 7.6687C16.4477 7.6687 16 8.11642 16 8.6687C16 9.49713 15.3284 10.1687 14.5 10.1687C13.6716 10.1687 13 9.49713 13 8.6687C13 8.11642 12.5523 7.6687 12 7.6687C11.4477 7.6687 11 8.11642 11 8.6687C11 9.49713 10.3284 10.1687 9.5 10.1687C8.67157 10.1687 8 9.49713 8 8.6687C8 8.11642 7.55228 7.6687 7 7.6687C6.44772 7.6687 6 8.11642 6 8.6687C6 9.49713 5.32843 10.1687 4.5 10.1687C3.67157 10.1687 3 9.49713 3 8.6687V7.90477L4.61803 4.6687H19.3808L21 7.90491Z"
+              ></path>
+            </svg>
+            <span>ثبت نام فروشندگان</span>
+          </div>
+
+          <div class="p-3 button--popup">
+            <a
+              href="#"
+              class="text-decoration-none text-white border border-2 rounded-3 py-3 px-2 header--button button--popup"
+            >
+              <span class="text-white fw-bolder">ورود</span> یا
+              <span class="text-white fw-bolder">عضویت</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="header--usericon d-lg-none button--popup">
+          <span class="material-icons"> perm_identity </span>
+        </div>
+      </div>
+      <!-- div--logo & sign ::end-->
+      <!-- div--sefaresh ::begin-->
+      <div class="sefaresh">
+        <div class="d-flex justiy-content-start overflow-hidden">
+          <h1 class="fw-bold">سفارش آنلاین</h1>
+          <div class="sefaresh--bar mx-4">
+            <p class="fs-1 fw-bolder">غذا</p>
+            <p class="fs-1 fw-bolder mt-1">خواروبار</p>
+            <p class="fs-1 fw-bolder mt-1">نان</p>
+            <p class="fs-1 fw-bolder">میوه</p>
+            <p class="fs-1 fw-bolder mt-2">قهوه</p>
+            <p class="fs-1 fw-bolder mt-2">پیتزا</p>
+            <p class="fs-1 fw-bolder mt-2">غذا</p>
+          </div>
+        </div>
+        <p class="opacity-75">سفارش آنلاین غذا ، میوه، نان، شیرینی و ...</p>
+
+        <div
+          class="d-flex bg-white rounded-pill justify-content-between align-items-center header--searchbox shadow-sm"
+        >
+          <div class="d-flex justify-content-start align-items-center">
+            <span
+              class="material-icons d-flex justify-content-center align-items-center mx-2"
+            >
+              location_pin
+            </span>
+            <input
+              type="text"
+              placeholder="ابتدا آدرستان را وارد کنید ."
+              class="border border-0 px-3 py-2 header--input"
+            />
+          </div>
+
+          <div
+            class="rounded-circle search--div d-flex align-items-center justify-content-center p-1 m-2"
+          >
+            <span
+              class="material-icons d-flex justify-content-center align-items-center text-white"
+            >
+              search
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- div--sefaresh ::end-->
+      <!-- nav::begin -->
+      <div
+        class="nav d-flex flex-nowrap justify-content-start justify-content-lg-around align-items-center p-4 mb-5 rounded-5 start-0"
+      >
+        <div class="mx-4 text-center">
+          <img src="../img/restooran.png" alt="رستوران" width="40px" />
+          <p class="m-0">رستوران</p>
+        </div>
+
+        <div class="mx-4 text-center">
+          <img src="../img/soopermarket.png" alt="سوپرمارکت" width="40px" />
+          <p class="m-0">سوپرمارکت</p>
+        </div>
+
+        <div class="mx-4 text-center">
+          <img src="../img/kafe.png" alt="کافه" width="40px" />
+          <p class="m-0">کافه</p>
+        </div>
+
+        <div class="mx-4 text-center">
+          <img src="../img/shirini.png" alt="شیرینی" width="40px" />
+          <p class="m-0">شیرینی</p>
+        </div>
+
+        <div class="mx-4 text-center">
+          <img src="../img/nanvaee.png" alt="نانوایی" width="40px" />
+          <p class="m-0">نانوایی</p>
+        </div>
+
+        <div class="mx-4 text-center">
+          <img src="../img/mive.png" alt="میوه" width="40px" />
+          <p class="m-0">میوه</p>
+        </div>
+
+        <div class="mx-4 text-center">
+          <img src="../img/protein.png" alt="پروتين" width="40px" />
+          <p class="m-0">پروتين</p>
+        </div>
+
+        <div class="mx-4 text-center">
+          <img src="../img/abmive.png" alt="ابمیوه بستنی" width="40px" />
+          <p class="m-0">ابمیوه بستنی</p>
+        </div>
+
+        <div class="mx-4 text-center">
+          <img src="../img/ajil.png" alt="آجیل" width="40px" />
+          <p class="m-0">آجیل</p>
+        </div>
+
+        <div class="mx-4 text-center">
+          <img src="../img/sayer.png" alt="سایر" width="40px" />
+          <p class="m-0">سایر</p>
+        </div>
+      </div>
+      <!-- nav::end -->
+    </header>
+    <!-- header::end -->
+    <!-- main::begin -->
+
+    <main>
+      <!-- dastebandi::begin -->
+      <section class="dastebandi container my-5 py-lg-5">
+        <p class="fw-bold fs-6 opacity-75 me-3">دسته بندی ها</p>
+        <div class="row">
+          <div class="col-6 col-lg-3 col-xl-2 p-3 dastebandi--div">
+            <div
+              class="position-relative p-1 bg-white rounded-4 shadow dastebandi--div_d"
+            >
+              <img
+                src="../img/irani.jpg"
+                alt="ایرانی"
+                width="100%"
+                height="100%"
+                class="rounded-4"
+              />
+              <div
+                class="position-absolute end-0 bottom-0 bg-white dastebandi--p px-2 d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-0 ms-2">ایرانی</p>
+                <span class="material-icons"> chevron_left </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 col-xl-2 p-3 dastebandi--div">
+            <div
+              class="position-relative p-1 bg-white rounded-4 shadow dastebandi--div_d"
+            >
+              <img
+                src="../img/fastfood.jpg"
+                alt="فست‌فود"
+                width="100%"
+                height="100%"
+                class="rounded-4"
+              />
+              <div
+                class="position-absolute end-0 bottom-0 bg-white dastebandi--p px-2 d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-0 ms-2">فست‌فود</p>
+                <span class="material-icons"> chevron_left </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 col-xl-2 p-3 dastebandi--div">
+            <div
+              class="position-relative p-1 bg-white rounded-4 shadow dastebandi--div_d"
+            >
+              <img
+                src="../img/kabab.jpg"
+                alt="کباب"
+                width="100%"
+                height="100%"
+                class="rounded-4"
+              />
+              <div
+                class="position-absolute end-0 bottom-0 bg-white dastebandi--p px-2 d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-0 ms-2">کباب</p>
+                <span class="material-icons"> chevron_left </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 col-xl-2 p-3 dastebandi--div">
+            <div
+              class="position-relative p-1 bg-white rounded-4 shadow dastebandi--div_d"
+            >
+              <img
+                src="../img/pitza.jpg"
+                alt="پیتزا"
+                width="100%"
+                height="100%"
+                class="rounded-4"
+              />
+              <div
+                class="position-absolute end-0 bottom-0 bg-white dastebandi--p px-2 d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-0 ms-2">پیتزا</p>
+                <span class="material-icons"> chevron_left </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 col-xl-2 p-3 dastebandi--div">
+            <div
+              class="position-relative p-1 bg-white rounded-4 shadow dastebandi--div_d"
+            >
+              <img
+                src="../img/berger.jpg"
+                alt="برگر"
+                width="100%"
+                height="100%"
+                class="rounded-4"
+              />
+              <div
+                class="position-absolute end-0 bottom-0 bg-white dastebandi--p px-2 d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-0 ms-2">برگر</p>
+                <span class="material-icons"> chevron_left </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 col-xl-2 p-3 dastebandi--div">
+            <div
+              class="position-relative p-1 bg-white rounded-4 shadow dastebandi--div_d"
+            >
+              <img
+                src="../img/sandowich.jpg"
+                alt="ساندویچ"
+                width="100%"
+                height="100%"
+                class="rounded-4"
+              />
+              <div
+                class="position-absolute end-0 bottom-0 bg-white dastebandi--p px-2 d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-0 ms-2">ساندویچ</p>
+                <span class="material-icons"> chevron_left </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 col-xl-2 p-3 dastebandi--div">
+            <div
+              class="position-relative p-1 bg-white rounded-4 shadow dastebandi--div_d"
+            >
+              <img
+                src="../img/sokhari.jpg"
+                alt="سوخاری"
+                width="100%"
+                height="100%"
+                class="rounded-4"
+              />
+              <div
+                class="position-absolute end-0 bottom-0 bg-white dastebandi--p px-2 d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-0 ms-2">سوخاری</p>
+                <span class="material-icons"> chevron_left </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 col-xl-2 p-3 dastebandi--div">
+            <div
+              class="position-relative p-1 bg-white rounded-4 shadow dastebandi--div_d"
+            >
+              <img
+                src="../img/pasta.jpg"
+                alt="پاستا"
+                width="100%"
+                height="100%"
+                class="rounded-4"
+              />
+              <div
+                class="position-absolute end-0 bottom-0 bg-white dastebandi--p px-2 d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-0 ms-2">پاستا</p>
+                <span class="material-icons"> chevron_left </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 col-xl-2 p-3 dastebandi--div">
+            <div
+              class="position-relative p-1 bg-white rounded-4 shadow dastebandi--div_d"
+            >
+              <img
+                src="../img/salad.jpg"
+                alt="سالاد"
+                width="100%"
+                height="100%"
+                class="rounded-4"
+              />
+              <div
+                class="position-absolute end-0 bottom-0 bg-white dastebandi--p px-2 d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-0 ms-2">سالاد</p>
+                <span class="material-icons"> chevron_left </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 col-xl-2 p-3 dastebandi--div">
+            <div
+              class="position-relative p-1 bg-white rounded-4 shadow dastebandi--div_d"
+            >
+              <img
+                src="../img/daryayi.jpg"
+                alt="دریایی"
+                width="100%"
+                height="100%"
+                class="rounded-4"
+              />
+              <div
+                class="position-absolute end-0 bottom-0 bg-white dastebandi--p px-2 d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-0 ms-2">دریایی</p>
+                <span class="material-icons"> chevron_left </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 col-xl-2 p-3 dastebandi--div">
+            <div
+              class="position-relative p-1 bg-white rounded-4 shadow dastebandi--div_d"
+            >
+              <img
+                src="../img/beynalmelal.jpg"
+                alt="بین‌المللی"
+                width="100%"
+                height="100%"
+                class="rounded-4"
+              />
+              <div
+                class="position-absolute end-0 bottom-0 bg-white dastebandi--p px-2 d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-0 ms-2">بین‌المللی</p>
+                <span class="material-icons"> chevron_left </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3 col-xl-2 p-3 dastebandi--div">
+            <div
+              class="position-relative p-1 bg-white rounded-4 shadow dastebandi--div_d"
+            >
+              <img
+                src="../img/gilani.jpg"
+                alt="گیلانی"
+                width="100%"
+                height="100%"
+                class="rounded-4"
+              />
+              <div
+                class="position-absolute end-0 bottom-0 bg-white dastebandi--p px-2 d-flex justify-content-between align-items-center"
+              >
+                <p class="mb-0 ms-2">گیلانی</p>
+                <span class="material-icons"> chevron_left </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- dastebandi::end -->
+
+      <!-- app::begin -->
+      <section class="app container position-relative py-5 p-sm-5 my-5">
+        <div class="app--img position-absolute"></div>
+
+        <div class="app--content">
+          <div class="app--content_div">
+            <div class="mb-5">
+              <h1>اپلیکیشن اسنپ‌فود</h1>
+            </div>
+
+            <div class="mb-5">
+              <p class="fs-6 opacity-75 fw-italic">
+                با اپلیکیشن اسنپ‌فود به راحتی و با چند کلیک ساده می‌توانید
+                رستوران‌ها، کافه‌ها، شیرینی‌فروشی‌ها و سوپرمارکت‌های نزدیک
+                خودتان را جست‌و‌جو کرده و از تجربه سفارش آسان از اسنپ‌فود لذت
+                ببرید.
+              </p>
+            </div>
+
+            <div class="mb-5">
+              <p class="app--inputs_p fw-bold">
+                برای دریافت لینک دانلود اپلیکیشن، شماره موبایلتان رو وارد کنید
+              </p>
+              <div
+                class="bg-white p-2 d-flex justify-content-between rounded-3 app--inputs"
+              >
+                <input type="text" placeholder="*********09" class="border-0" />
+                <input
+                  type="submit"
+                  value="دریافت لینک"
+                  class="app_buttom border border-white text-white rounded-3 px-3 fw-bold"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-wrap justify-content-start app-buttom_div flex-column flex-sm-row"
+          >
+            <div class="app-buttom m-3">
+              <a href="#"
+                ><img
+                  src="../img/googleplay.png"
+                  alt="googleplay"
+                  class="w-100 h-100"
+              /></a>
+            </div>
+            <div class="app-buttom m-3">
+              <a href="#"
+                ><img src="../img/bazar.png" alt="baza" class="w-100 h-100"
+              /></a>
+            </div>
+            <div class="app-buttom m-3">
+              <a href="#"
+                ><img src="../img/sibapp.jpg" alt="sibapp" class="w-100 h-100"
+              /></a>
+            </div>
+            <div class="app-buttom m-3">
+              <a href="#"
+                ><img src="../img/iapps.png" alt="iapps" class="w-100 h-100"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- app::end -->
+      <hr>
+      <!-- shahr::begin -->
+      <section class="p-5 asami mb-5 mt-5">
+        <p class="fs-6 fw-bold">اسنپ‌فود در شهرهای ایران</p>
+        <div class="row asami--div mt-3">
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">تهران</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">ارومیه</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">بابل</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">مرودشت</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">رباط کریم</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">اندیمشک</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">قشم</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">شهر ری</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">کلارآباد</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">سیرجان</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">شهرضا</p></a
+          >
+
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">مشهد</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">گرگان</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">اسلامشهر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">سمنان</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">تربتحیدریه</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">مرند</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">دماوند</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">کازرون</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">میاندوآب</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">خمین</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">چهارمحالبختیاری</p></a
+          >
+          
+
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">اصفهان</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">اردبیل</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">نیشابور</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">شهرکرد</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">ایلام</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">اندیشه</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">نسیم شهر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">بم</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">گرمسار</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">قرچک</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">طرقبه</p></a
+          >
+
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">کرج</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">ساری</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">خرم آباد</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">مراغه</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">ساوه</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">لواسان</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">محمود آباد</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">تنکابن</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">تربت جام</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">هشتگرد</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">گناباد</p></a
+          >
+
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">شیراز</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">کرمانشاه</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">یاسوج</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">بندر انزلی</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">سپاهان شهر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">فولادشهر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">لنگرود</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">زرین شهر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">فومن</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">رودهن</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">اردکان یزد</p></a
+          >
+
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">تبریز</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">بوشهر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">قائم‌ شهر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">ورامین</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">زاهدان</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">قوچان</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">بهشهر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">سرخ رود</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">میبد</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">باقر شهر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">زابل</p></a
+          >
+
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">اهواز</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">همدان</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">بابلسر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">بروجرد</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">پرند</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">شهریار</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">بومهن</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">صومعه سرا</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">جاجرود</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">تفرش</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">رفسنجان</p></a
+          >
+
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">قم</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">زنجان</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">کاشان</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">دزفول</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">گنبد کاووس</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">نور</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">رویان</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">ملایر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">فسا</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">مبارکه</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">کرمان</p></a
+          >
+
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">اراک</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">بیرجند</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">آمل</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">کیش</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">بهارستان</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">سلمان شهر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">بروجن</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">ایزدشهر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">لار</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">رشت</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">شاهین شهر</p></a
+          >
+
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">سبزوار</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">پردیس</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">خمینی شهر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">چالوس</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">خرمشهر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">نکا</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">صدرا</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">آستانه اشرفیه</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">یزد</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">بندرعباس</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">لاهیجان</p></a
+          >
+
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">شاهرود</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">پاکدشت</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">نوشهر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">سهند</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">شهر قدس</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">ملارد</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">رودهن</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">قزوین</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">بجنورد</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">سنندج</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">آبادان</p></a
+          >
+
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">نجف آباد</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">رامسر</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">خوی</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">فلاورجان</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">فریدونکنار</p></a
+          >
+          <a href="#" class="text-decoration-none opacity-75 lh-base col-4 col-sm-3 col-lg-2 col-xl-1"
+            ><p class="m-0">شیرگاه</p></a
+          >
+
+        </div>
+      </section>
+      <!-- shahr::end-->
+    </main>
+    <!-- main::end -->
+    <!-- footer:begin -->
+    <footer class="container-fluid p-5">
+      <div class="row">
+
+        <div class="col-12 col-md-12 col-lg-6 col-xl-4 d-flex flex-column p-3 my-4">
+          <div class="d-flex justify-content-start align-items-start">
+            <div class="mx-2">
+              <img
+                src="../img/logo.png"
+                alt="logo"
+                width="120px"
+                class="footer--logo"
+              />
+            </div>
+
+            <div class="py-3">
+              <h3 class="fs-5 fw-bold footer--heading">اسنپ‌فود</h3>
+              <p class="footer--p">تجربه سفارش غذا، از زودفود تا اسنپ‌فود</p>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-start justify-content-lg-center mt-2 flex-wrap my-4">
+            <i class="fa fa-twitter border border-1 rounded-circle bg-white p-2 mx-2 fs-5" aria-hidden="true"></i>
+            <i class="fa fa-paper-plane border border-1 rounded-circle bg-white p-2 mx-2 fs-5" aria-hidden="true"></i>
+
+            <i class="fa fa-linkedin border border-1 rounded-circle bg-white p-2 mx-2 fs-5" aria-hidden="true"></i>
+            <i class="fa fa-instagram border border-1 rounded-circle bg-white p-2 mx-2 fs-5" aria-hidden="true"></i>
+
+            <i class="fa fa-joomla border border-1 rounded-circle bg-white p-2 mx-2 fs-5" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2 d-flex flex-column align-items-start p-3 my-4 lh-sm footer--a">
+          <a href="#" class="text-dark text-decoration-none"><p class="m-0">درباره اسنپ‌فود</p></a>
+          <a href="#" class="text-dark text-decoration-none"><p class="m-0">وبلاگ</p></a>
+          <a href="#" class="text-dark text-decoration-none"><p class="m-0">قوانین سایت</p></a>
+          <a href="#" class="text-dark text-decoration-none"><p class="m-0">حریم خصوصی</p></a>
+          <a href="#" class="text-dark text-decoration-none"><p class="m-0">ثبت نام فروشندگان</p></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2 d-flex flex-column align-items-start p-3 my-4 lh-sm footer--a">
+          <a href="#" class="text-dark text-decoration-none"><p class="m-0"> تماس با اسنپ‌فود</p></a>
+          <a href="#" class="text-dark text-decoration-none"><p class="m-0">پرسش‌های متداول</p></a>
+          <a href="#" class="text-dark text-decoration-none"><p class="m-0">ثبت شکایات</p></a>
+          <a href="#" class="text-dark text-decoration-none"><p class="m-0">اپلیکیشن موبایل</p></a>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-6 col-xl-3 p-3 d-flex justify-content-end my-4">
+          
+          <img
+            src="../img/logo-tejarat.png"
+            alt="logo"
+            width="75px"
+            height="75px"
+          />
+          <img
+            src="../img/logo-etehadye.png"
+            alt="logo"
+            width="75px"
+            height="75px"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- footer:end -->
+
+    <!-- js::begin -->
+    <script>
+      let button = document.querySelector(".button--popup");
+      let pop = document.querySelector(".popup--div");
+
+      button.onclick = showMenu;
+      function showMenu() {
+        pop.classList.toggle("opener");
+      }
+
+      let buton = document.querySelector(".popup--close");
+      let popup = document.querySelector(".popup--div");
+
+      buton.onclick = closeMenu;
+      function closeMenu() {
+        popup.classList.toggle("closer");
+      }
+    </script>
+    <!-- js::end -->
+  </body>
+</html>

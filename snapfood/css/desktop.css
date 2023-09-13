@@ -1,0 +1,46 @@
+/*header::begin*/
+
+.sefaresh p{
+    font-size: 1.25rem;
+}
+header ,.app{
+    border-bottom-right-radius: 7.5rem;
+}
+/*header::end*/
+/*dastebandi::begin*/
+
+.dastebandi--div{
+    height: 9rem;
+}
+/*dastebandi::end*/
+/*app::begin*/
+
+.app--img{
+    background-image: url(../img/app.png);
+    background-size: cover;
+    width: 425px;
+    height: 580px;
+    top: -25%;
+    left: 5%;
+}
+.app--content{
+    width:75% ;
+    min-width: 300px;
+    height: 100%;
+    
+}
+.app{
+    padding: 50px 150px;
+    min-height: 70vh;
+    max-height: max-content;
+
+}
+.app--content_div{
+    width: 60%;
+    min-width: 100px;
+}
+
+.app-buttom_div{
+    width: 70%;
+}
+/*app::end*/

@@ -1,0 +1,25 @@
+/*header::begin*/
+
+.sefaresh h1{
+    font-size:2rem ;
+}
+.sefaresh p{
+    font-size: 1rem;
+}
+/*header::end*/
+/*dastebandi::begin*/
+
+.dastebandi--div{
+    height: 8rem;
+}
+.dastebandi--div_d{
+    height: 100%;
+}
+/*dastebandi::end*/
+/*app::begin*/
+
+.app--content_div{
+    width: 80%;
+    min-width: 100px;
+}
+/*app::end*/

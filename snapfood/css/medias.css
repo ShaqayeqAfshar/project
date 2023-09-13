@@ -1,0 +1,12 @@
+
+@media screen and (max-width:800px){
+    .footer--logo{
+        width: 100px;
+    }
+}
+footer{
+    background-color: rgb(249, 250, 251);
+}
+.footer-heading{
+    color: var(--text-red);
+}
