@@ -1,0 +1,152 @@
+@media (max-width: 767px) {
+  body {
+    position: relative;
+  }
+
+  header {
+    height: 40vh;
+
+    .behind {
+      height: 10vh;
+    }
+
+    .transition {
+      transition: 0.5s;
+    }
+
+    #bar {
+      width: fit-content;
+      height: max-content;
+    }
+
+    .navbar {
+      height: 10vh;
+      background-color: $bg-ul;
+      z-index: 1000;
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      nav {
+        background-color: $bg-ul;
+        width: 60%;
+        height: 90vh;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+        overflow: auto;
+      }
+
+      .navi {
+        width: 100%;
+      }
+
+      ul {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      li {
+        display: inline-block;
+        clear: both;
+
+        ul > li {
+          display: block;
+        }
+
+        span {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 10px;
+          padding: 5px 10px;
+
+          &::after {
+            transform: rotate(0deg);
+            padding: 1px 3px;
+          }
+
+          &:hover::after {
+            transform: rotate(180deg);
+          }
+
+          &::after {
+            transform: rotate(0deg);
+          }
+        }
+        
+        ul.pages {
+          height: min-content;
+
+          li::before {
+            margin-right: 10px;
+            color: $light-green;
+          }
+
+          li {
+            text-align: start;
+          }
+        }
+      }
+    }
+
+    .header-content {
+      position: relative;
+      height: 30vh;
+    }
+
+    .swiper-content {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      z-index: 100;
+
+      .swiper-slide {
+        height: 100%;
+      }
+
+      & > div {
+        width: 100%;
+        height: 100%;
+        
+        & > h1 {
+          & > span {
+            font-size: 7vh !important;
+          }
+        }
+      }
+    }
+  
+   
+  }
+
+  i {
+    padding: 1px 15px;
+    cursor: pointer;
+  }
+  i > input {
+    top: 250%;
+    right: 0%;
+  }
+  .rotate {
+    transform: rotate(180deg);
+  }
+  .header-content {
+    height: 40vh;
+  }
+
+
+  main{
+    .company .contain {
+      width: 100%;
+    }
+    .news{
+      input{
+        max-width: 324px;
+    }
+  }}
+}

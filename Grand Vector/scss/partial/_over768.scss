@@ -1,0 +1,110 @@
+@media screen and (min-width: 768px) {
+  .position-absolut {
+    position: absolute;
+  }
+
+  header {
+    position: relative;
+    min-height: 100vh;
+    max-height: max-content;
+
+    li {
+      padding: 1px 25px;
+
+      &:hover ul {
+        transition: 0.5s;
+        transform: translateY(-20px);
+      }
+
+      span ::after {
+        margin-bottom: 1px;
+      }
+
+      ul {
+        min-width: 270px;
+        background-color: $bg-ul;
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      ul.pages {
+        left: 0%;
+        right: 0%;
+        margin: auto;
+
+        li::before {
+          color: $white;
+          margin-right: 10px !important;
+        }
+
+        li > a::before {
+          margin-right: 20px !important;
+        }
+
+        li > a {
+          color: $light-green;
+        }
+      }
+    }
+
+    .header-content .swiper-pagination .swiper-pagination-bullet {
+      border: 1.5px solid white !important;
+      padding: 6px;
+      margin: 10px;
+      opacity: 1;
+      background-color: inherit;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet-active {
+      background-color: white !important;
+    }
+
+    .swiper-content {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 100;
+
+      & > div {
+        height: 100%;
+
+        & h1 {
+          text-align: justify;
+          font-size: 5vw;
+        }
+      }
+
+      .btn-groups {
+        min-width: max-content;
+
+        & > button:first-child:hover {
+          background-color: $btn-hover !important;
+          border-color: $btn-hover !important;
+          color: $white;
+        }
+
+        & > button:last-child:hover {
+          background-color: $light-green !important;
+          border-color: $light-green !important;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .header-content {
+    height: 100vh;
+  }
+
+
+  main{
+    .company .contain {
+      width: 80%;
+    }
+    .news{
+      input{
+        width: 324px;
+    }}
+  }
+}

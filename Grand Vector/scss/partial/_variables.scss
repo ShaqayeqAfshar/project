@@ -1,0 +1,51 @@
+// colors
+$black: #000;
+$bg-ul: #282e3e;
+$white: #fff;
+$light-green: #82c434;
+$btn-hover: #282e3e;
+$hr: #535151;
+$light-gray: #d7d7d7;
+
+.fixednav{
+
+  background-color: $btn-hover;
+  min-height: fit-content !important;
+  height: fit-content;
+  max-height: max-content;
+
+}
+.bg-green {
+  background-color: $light-green;
+  border-color: $light-green;
+}
+.border-green {
+  border-color: $light-green;
+}
+.text-green {
+  color: $light-green;
+}
+
+.text-shadow {
+  text-shadow: 0px 0px 5px $white;
+}
+
+@keyframes moveup {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@font-face {
+  font-family: "opensanse";
+  src: url("../../fonts/opensans/opensans.eot");
+  src: url("../../fonts/opensans/opensans.woff") format("woff"),
+  url("../../fonts/opensans/opensans.ttf") format("ttf"),
+  url("../../fonts/opensans/opensans.woff2") format("woff2");
+  }

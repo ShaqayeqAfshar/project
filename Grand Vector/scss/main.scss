@@ -1,0 +1,23 @@
+@import "./partial/variables";
+@import "./partial/desktop";
+@import "./partial/tablet";
+@import "./partial/mobil";
+@import "./partial/swipper";
+@import "./partial/moshtarak";
+@import "./partial/over768";
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    min-height: fit-content !important;
+    height:min-content !important;
+    max-height: min-content !important;
+    font-family: 'opensans', Arial, sans-serif;
+    font-weight:normal;
+}
+

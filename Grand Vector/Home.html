@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./library/font-awesome.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- <script src="jquery.min.js"></script> -->
+    <!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
+    <script src="./js/DOMnode.js" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- <script src="/js/main.js"></script> -->
+    <title>Document</title>
+  </head>
+
+  <body class="p-0 m-0">
+
+    <header class="m-0">
+      <div class="d-md-none behind w-100"></div>
+      <section class="navbar contain text-center top-0 end-0 position-absolute">
+        <div
+          class="navi d-flex justify-content-start align-items-center justify-content-around flex-md-column flex-xxl-row text-md-center position-relative"
+        >
+          <div class="d-md-none d-flex align-items-center" id="bar">
+            <i
+              class="fa fa-bars fs-2 text-white"
+              id="barIcon"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <div id="logo">
+            <svg
+              class="text-logo"
+              width="130px"
+              height="36px"
+              viewBox="0 0 130 36"
+              shape-rendering="geometricPrecision"
+            >
+              <text
+                style="fill: #fff; font-family: Cursive"
+                transform="matrix(1 0 0 1 -0.5197 33.4432)"
+                font-family="Pacifico"
+                font-size="36px"
+              >
+                Vector
+              </text>
+              <text
+                style="
+                  fill: #fff;
+                  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+                "
+                transform="matrix(1 0 0 1 68 11.125)"
+                font-family="Montserrat"
+                font-size="14"
+                letter-spacing="1"
+              >
+                GRAND
+              </text>
+              <path
+                style="stroke: #fff; fill: transparent; font-size: 2"
+                class="logo"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                stroke-linecap="round"
+                d="M95.313,25.564c9.022-6.656,20.032-9.736,30-5"
+              ></path>
+            </svg>
+          </div>
+
+          <nav
+            class="d-md-flex align-items-center d-none order-first order-md-last flex-nowrap justify-content-around"
+          >
+            <ul
+              class="p-0 m-0 flex-nowrap d-flex flex-column flex-md-row justify-content-md-evenly navUl"
+            >
+              <li class="px-md-3 px-lg-4 px-xl-4 text-start px-2" id="Home">
+                <a href="#">Home</a>
+              </li>
+              <li class="position-relative px-md-3 px-lg-4 px-xl-4">
+                <span>Elements</span>
+                <ul
+                  class="position-absolut top-100 start-0 m-0 p-0 mt-md-5 d-none d-lg-flex flex-column border border-0 rounded-2 p-3 lh-lg align-items-start text-start"
+                >
+                  <li><a href="">Tabs & Accordions</a></li>
+                  <li><a href="">Typography</a></li>
+                  <li><a href="">Forms</a></li>
+                  <li><a href="">Buttons</a></li>
+                  <li><a href="">Grid</a></li>
+                  <li><a href="">Icons</a></li>
+                  <li><a href="">Tables</a></li>
+                  <li><a href="">Progress bars</a></li>
+                </ul>
+              </li>
+              <li class="position-relative px-md-3 px-lg-4 px-xl-4">
+                <span>Features</span>
+                <ul
+                  class="position-absolut top-100 start-0 m-0 p-0 mt-md-5 d-none d-lg-flex flex-column border border-0 rounded-2 p-3 lh-lg align-items-start text-start"
+                >
+                  <li><a href="">Header Transparent</a></li>
+                  <li class="pb-2 lh-sm text-start">
+                    <a href="">Header Center,Footer Light Center</a>
+                  </li>
+                  <li class="pb-2 lh-sm text-start">
+                    <a href="">Header Minimal, Footer Light Center</a>
+                  </li>
+                  <li><a href="">Header Corporate</a></li>
+                  <li><a href="">Header Hamburger Menu</a></li>
+                  <li><a href="">Footer Minimal Dark</a></li>
+                  <li><a href="">Footer Widget Dark</a></li>
+                  <li><a href="">Footer Center Dark</a></li>
+                  <li><a href="">Footer Minimal light</a></li>
+                  <li><a href="">Footer Widget Light</a></li>
+                </ul>
+              </li>
+              <li class="position-relative px-md-3 px-lg-4 px-xl-4">
+                <span>Extras</span>
+                <ul
+                  class="position-absolut top-100 start-0 m-0 p-0 mt-md-5 d-none d-lg-flex flex-column border border-0 rounded-2 p-3 lh-lg align-items-start text-start"
+                >
+                  <li><a href="">404</a></li>
+                  <li><a href="">Coming soon</a></li>
+                  <li><a href="">Login page</a></li>
+                  <li><a href="">Maintenance page</a></li>
+                  <li><a href="">Register page</a></li>
+                  <li><a href="">Search results page</a></li>
+                  <li><a href="">Terms of Use</a></li>
+                </ul>
+              </li>
+              <li class="px-md-3 px-lg-4 px-xl-4">
+                <span id="sp">Pages</span>
+                <ul
+                  class="position-absolut top-100 m-0 px-0 ps-2 py-3 mt-md-5 row border border-0 rounded-2 p-md-3 lh-lg pages align-items-start contain text-start d-none d-lg-flex flex-column flex-md-row"
+                >
+                  <div
+                    class="col-12 col-md-3 d-flex flex-column align-items-start p-0 p-md-3"
+                  >
+                    <h2 class="fw-bold text-white fs-3">PAGES</h2>
+                    <li class="lh-sm pb-2"><a href="">About Us</a></li>
+                    <li class="lh-sm pb-2"><a href="">Our Team</a></li>
+                    <li class="lh-sm pb-2">
+                      <a href="">Team member profile</a>
+                    </li>
+                    <li class="lh-sm pb-2"><a href="">Contact Us</a></li>
+                    <li class="lh-sm pb-2"><a href="">Pricing</a></li>
+                    <li class="lh-sm pb-2"><a href="">Services page</a></li>
+                    <li class="lh-sm pb-2"><a href="">Client Page</a></li>
+                    <li class="lh-sm pb-2"><a href="">FAQ</a></li>
+                  </div>
+                  <div
+                    class="col-12 col-md-3 d-flex flex-column align-items-start p-0 p-md-3"
+                  >
+                    <h2 class="fw-bold text-white fs-3">PAGES 2</h2>
+                    <li class="lh-sm pb-2"><a href="">With left sidebar</a></li>
+                    <li class="lh-sm pb-2">
+                      <a href="">With right sidebar</a>
+                    </li>
+                    <li class="lh-sm pb-2"><a href="">Without sidebar</a></li>
+                    <li class="lh-sm pb-2"><a href="">Default Blog</a></li>
+                    <li class="lh-sm pb-2"><a href="">2 Columns Blog</a></li>
+                    <li class="lh-sm pb-2"><a href="">3 Columns Blog</a></li>
+                    <li class="lh-sm pb-2"><a href="">Archive page</a></li>
+                    <li class="lh-sm pb-2"><a href="">Post page</a></li>
+                    <li class="lh-sm pb-2"><a href="">Timeline</a></li>
+                  </div>
+                  <div
+                    class="col-12 col-md-3 d-flex flex-column mx-0 align-items-start p-0 p-md-3"
+                  >
+                    <h2 class="fw-bold text-white fs-3">PAGES 3</h2>
+                    <li class="lh-sm"><a href="">Header Transparent</a></li>
+                    <li class="text-start pb-2 lh-sm">
+                      <a href="">Header Center, Footer Light Center</a>
+                    </li>
+                    <li class="text-start pb-2 lh-sm">
+                      <a href="">Header Minimal, Footer Light Center</a>
+                    </li>
+                    <li class="lh-sm pb-2">
+                      <a href="">Header Hamburger Menu</a>
+                    </li>
+                    <li class="lh-sm pb-2"><a href="">Header Corporate</a></li>
+                    <li class="lh-sm pb-2">
+                      <a href="">Footer Center Dark</a>
+                    </li>
+                    <li class="lh-sm pb-2">
+                      <a href="">Footer Minimal Dark</a>
+                    </li>
+                    <li class="lh-sm pb-2">
+                      <a href="">Footer Minimal light</a>
+                    </li>
+                    <li class="lh-sm pb-2">
+                      <a href="">Footer Widget Light</a>
+                    </li>
+                    <li class="lh-sm pb-2">
+                      <a href="">Footer Widget Dark</a>
+                    </li>
+                  </div>
+                  <div class="col-12 col-md-3 d-flex flex-column p-0 p-md-3">
+                    <h2 class="text-nowrap text-white fw-bold fs-3">
+                      E-COMMERCE
+                    </h2>
+                    <li class="lh-sm pb-2"><a href="">Product catalog</a></li>
+                    <li class="lh-sm pb-2"><a href="">Single product</a></li>
+                    <li class="lh-sm pb-2"><a href="">Shopping cart</a></li>
+                    <li class="lh-sm pb-2"><a href="">Checkout</a></li>
+                  </div>
+                </ul>
+              </li>
+              <li class="position-relative px-md-3 px-lg-4 px-xl-4">
+                <span>Blog</span>
+                <ul
+                  class="position-absolut top-100 start-0 m-0 p-0 mt-md-5 d-none d-lg-flex flex-column border border-0 rounded-2 p-3 lh-lg align-items-start text-start"
+                >
+                  <li><a href="">Default Blog</a></li>
+                  <li><a href="">2 Columns Blog</a></li>
+                  <li><a href="">3 Columns Blog</a></li>
+                  <li><a href="">Archive page</a></li>
+                  <li><a href="">Post page</a></li>
+                  <li><a href="">Timeline hot</a></li>
+                </ul>
+              </li>
+              <li class="position-relative px-md-3 px-lg-4 px-xl-4">
+                <span>Gallery</span>
+                <ul
+                  class="position-absolut top-100 end-0 m-0 p-0 mt-md-5 d-none d-lg-flex flex-column border border-0 rounded-2 p-3 lh-lg align-items-start text-start"
+                >
+                  <li><a href="">Grid Padding Gallery</a></li>
+                  <li><a href="">Grid Without Padding Gallery</a></li>
+                  <li><a href="">Grid Masonry</a></li>
+                  <li><a href="">Grid Cobb</a></li>
+                </ul>
+              </li>
+              <li class="position-relative px-md-3 px-lg-4 px-xl-4">
+                <span>Shop</span>
+                <ul
+                  class="position-absolut top-100 end-0 m-0 p-0 mt-md-5 d-none d-lg-flex flex-column border border-0 rounded-2 p-3 lh-lg align-items-start text-start"
+                >
+                  <li><a href="">Product catalog</a></li>
+                  <li><a href="">Single product</a></li>
+                  <li><a href="">Shopping cart</a></li>
+                  <li><a href="">Checkout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <div
+            id="icons"
+            class="d-flex align-items-center order-xxl-last justify-content-center py-md-3 py-xxl-0"
+          >
+            <i
+              class="fa fa-search position-relative text-white"
+              id="search"
+              aria-hidden="true"
+            >
+              <input
+                type="search"
+                placeholder="Search..."
+                class="position-absolute me-1 me-md-0 mt-lg-3 p-2 d-none invisible border-0 rounded-3"
+              />
+            </i>
+
+            <i class="fa fa-shopping-cart text-white" aria-hidden="true"
+              ><span>10</span></i
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="header-content">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-1"></div>
+            <div class="swiper-slide swiper-slide-2"></div>
+            <div class="swiper-slide swiper-slide-3"></div>
+          </div>
+          <div class="d-none d-md-block swiper-pagination"></div>
+        </div>
+
+        <div
+          class="swiper-content d-flex justify-content-center align-items-center align-items-md-start w-100"
+        >
+          <div
+            class="d-flex flex-column justify-content-center justify-content-md-start align-items-center px-md-5 my-md-3"
+          >
+            <h1 class="text-center mb-md-5 text-white px-md-5 lh-1">
+              <small class="fs-2 mb-md-4 text-nowrap">YOU CAN CREATE</small
+              ><br />
+              <span class="text-center">your own website</span>
+            </h1>
+            <p class="d-none d-md-block text-center mb-5 fs-4 text-white">
+              The concept behind the creation of most multipurpose themes is to
+              produce a single website template that would suit any type of
+              company
+            </p>
+            <div class="btn-groups d-none d-md-block">
+              <button
+                type="button"
+                class="btn btn-outline-light mx-2 px-5 p-3 bg-green first-btn fs-5 fw-bold"
+              >
+                BUY A THEME
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-light mx-2 px-5 p-3 second-btn fs-5 fw-bold"
+              >
+                VIEW FEATURED
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- advantage -->
+      <section
+        class="advantage d-flex align-items-center justify-content-center"
+      >
+        <div class="contain pe-md-3 text-center pt-5 m-0">
+          <h2 class="fs-1 fw-bold mt-md-5">OUR ADVANTAGES</h2>
+          <hr class="mb-5 mt-4" />
+          <p class="fs-5 px-2 px-md-5 mx-md-5 mb-5 lh-lg text-center">
+            We create user interfaces and modern websites. We will help you
+            build strong online business by creating a professional website
+            which best suits your needs.
+          </p>
+          <div class="cards row d-flex flex-md-row flex-wrap w-100 m-0">
+            <div
+              class="card col-12 col-md-6 col-xl-3 px-md-5 px-lg-3 text-center d-flex flex-column align-items-center justify-content-start border-0 mb-3"
+            >
+              <span class="fa-desktop"></span>
+              <div class="card-caption w-100">
+                <h4 class="fw-bold px-md-5">RETINA READY</h4>
+                <p class="fs-6 lh-base fw-lighter text-center px-2">
+                  Now you can enjoy razor sharp text, vibrant colors and crisp
+                  images on your retina display devices.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="card col-12 col-md-6 col-xl-3 px-md-5 px-lg-3 text-center d-flex flex-column align-items-center justify-content-start border-0 mb-3"
+            >
+              <span class="fa-cogs"></span>
+              <div class="card-caption w-100">
+                <h4 class="fw-bold">INCREDIBLY FLEXIBLE</h4>
+                <p class="fs-6 lh-base fw-lighter text-center px-2">
+                  Some developers have a defined workflow and are used to using
+                  various tools independently.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="card col-12 col-md-6 col-xl-3 px-md-5 px-lg-3 text-center d-flex flex-column align-items-center justify-content-start border-0 mb-3"
+            >
+              <span class="fa-pencil-square-o"></span>
+              <div class="card-caption w-100">
+                <h4 class="fw-bold px-md-5">CLEAN DESIGN</h4>
+                <p class="fs-6 lh-base fw-lighter text-center px-2">
+                  Making design choices for your website can be a daunting task.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="card col-12 col-md-6 col-xl-3 px-md-5 px-lg-3 text-center d-flex flex-column align-items-center justify-content-start border-0 mb-3"
+            >
+              <span class="fa-comments-o"></span>
+              <div class="card-caption w-100">
+                <h4 class="fw-bold px-md-5">QUICK SUPPORT</h4>
+                <p class="fs-6 lh-base fw-lighter text-center px-2">
+                  Problems with your website or email? Check our Knowledgebase
+                  or contact us. We're here to help!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- company -->
+      <section
+        class="company w-100 d-flex justify-content-center align-items-center text-center"
+      >
+        <div class="contain px-3 py-5 p-md-0">
+          <h2 class="fs-1 fw-bold mt-md-5">ABOUT COMPANY</h2>
+          <hr class="mb-5 mt-4" />
+
+          <div class="row">
+            <div class="col-12 col-lg-6 mb-5 mb-lg-0 ps-lg-5">
+              <img src="./img/company.jpg" alt="company image" width="100%" />
+            </div>
+
+            <div class="col-12 col-lg-6 px-lg-5">
+              <p class="fs-6 text-start">
+                We are a studio that aims to make our users experience easier
+                and much more pleasant.
+              </p>
+              <p class="fs-6 text-start">
+                You probably won't have a better opportunity to make sure of our
+                competence, as well as friendliness towards our customers.
+              </p>
+              <div>
+                <article class="mb-4">
+                  <div
+                    class="Progress-header d-flex justify-content-between align-items-center mb-1"
+                  >
+                    <p class="fw-bold fs-6 m-0">Social Media Marketing</p>
+                    <span class="fw-bold fs-6">50%</span>
+                  </div>
+                  <div class="progress bg-dark">
+                    <div
+                      class="rounded-0 border bg-green progress-bar border-0"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      style="width: 50%"
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </article>
+
+                <article class="mb-4">
+                  <div
+                    class="Progress-header d-flex justify-content-between align-items-center mb-1"
+                  >
+                    <p class="fw-bold fs-6 m-0">Design</p>
+                    <span class="fw-bold fs-6">90%</span>
+                  </div>
+                  <div class="progress bg-dark">
+                    <div
+                      class="rounded-0 border border-0 bg-green progress-bar"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      style="width: 90%"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </article>
+
+                <article class="mb-4">
+                  <div
+                    class="Progress-header d-flex justify-content-between align-items-center mb-1"
+                  >
+                    <p class="fw-bold fs-6 m-0">Consulting</p>
+                    <span class="fw-bold fs-6">80%</span>
+                  </div>
+                  <div class="progress bg-dark">
+                    <div
+                      class="rounded-0 border bg-green progress-bar border-0"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      style="width: 80%"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </article>
+
+                <article class="mb-4">
+                  <div
+                    class="Progress-header d-flex justify-content-between align-items-center mb-1"
+                  >
+                    <p class="fw-bold fs-6 m-0">Copywriting</p>
+                    <span class="fw-bold fs-6">20%</span>
+                  </div>
+                  <div class="progress bg-dark">
+                    <div
+                      class="border bg-green progress-bar border-0 rounded-0"
+                      role="progressbar"
+                      aria-label="Basic example"
+                      style="width: 20%"
+                      aria-valuenow="20"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="btn btn-outline-light mx-2 px-5 border-3 p-3 second-btn first-btn fs-5 fw-bold my-5"
+          >
+            LEARN MORE
+          </button>
+        </div>
+      </section>
+
+      <!-- counters -->
+      <section
+        class="counters bg-white text-black d-flex flex-column text-center justify-content-start"
+      >
+        <div class="contain">
+          <div>
+            <h2 class="fs-1 fw-bold mt-5">COUNTERS</h2>
+            <hr class="mb-5 mt-4" />
+          </div>
+
+          <div
+            class="d-flex flex-row flex-wrap justify-content-around px-sm-5 mx-5"
+          >
+            <div class="m-2">
+              <span class="fw-bold text-green">78</span>
+              <p class="fs-5">Successful projects</p>
+            </div>
+            <div class="m-2">
+              <span class="fw-bold text-green">23</span>
+              <p class="fs-5">Team members</p>
+            </div>
+            <div class="m-2">
+              <span class="fw-bold text-green">7</span>
+              <p class="fs-5">Project managers</p>
+            </div>
+            <div class="m-2">
+              <span class="fw-bold text-green">374</span>
+              <p class="fs-5">Satisfied customers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- client -->
+      <section
+        class="client bg-secondary-subtle text-black d-flex flex-column text-center justify-content-start"
+      >
+        <div class="contain">
+          <div>
+            <h2 class="fs-1 fw-bold mt-5">OUR SATISFIED CLIENTS</h2>
+            <hr class="mb-5 mt-4" />
+          </div>
+
+          <div class="cards-container py-3 px-sm-5 mx-sm-5">
+            <div class="owl-carousel owl-carousel1 owl-theme">
+              <div class="d-flex align-items-center justify-content-center">
+                <img src="./img/partner-1.png" alt="partner logo" />
+                <img src="./img/partner-2.png" alt="partner logo" />
+              </div>
+              <div class="d-flex align-items-center justify-content-center">
+                <img src="./img/partner-3.png" alt="partner logo" />
+                <img src="./img/partner-4.png" alt="partner logo" />
+              </div>
+              <div class="d-flex align-items-center justify-content-center">
+                <img src="./img/partner-5.png" alt="partner logo" />
+                <img src="./img/partner-6.png" alt="partner logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- posts -->
+      <section
+        class="posts text-black d-flex flex-column text-center justify-content-start bg-white pb-5"
+      >
+        <div class="contain">
+          <div>
+            <h2 class="fs-1 fw-bold mt-5">LATEST BLOG POSTS</h2>
+            <hr class="mb-5 mt-4" />
+          </div>
+
+          <div class="d-flex flex-wrap justify-content-around px-sm-5 mx-5">
+            <!-- card1 -->
+            <div class="card d-flex flex-column border-0">
+              <img src="./img/index-8.jpg" alt="pc" width="100%" />
+              <div class="c-info d-flex flex-column text-start py-3">
+                <h4>
+                  <a href="#" class="text-green text-decoration-none">
+                    Top 10 Website Mistakes <br />
+                    To Avoid
+                  </a>
+                </h4>
+                <time class="fw-light"> December 26, 2020 </time>
+
+                <p>
+                  Many websites have mistakes that can dramatically impact on
+                  their effectiveness. At best your website has 6 seconds to
+                  capture the interest of the viewer.
+                </p>
+                <div class="d-flex">
+                  <span class="material-symbols-outlined"> chat_bubble </span>
+                  <span class="text-green fw-bold">43</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- card2 -->
+            <div class="card d-flex flex-column border-0 mx-3">
+              <img src="./img/index-9.jpg" alt="pc" width="100%" />
+
+              <div class="c-info d-flex flex-column text-start py-3">
+                <h4>
+                  <a href="#" class="text-green text-decoration-none">
+                    Social Media Marketers
+                  </a>
+                </h4>
+                <time class="fw-light"> December 26, 2020 </time>
+                <p>
+                  Online social networks have become the new way in which people
+                  connect socially for both business and personal use.
+                </p>
+                <div class="d-flex">
+                  <span class="material-symbols-outlined"> chat_bubble </span>
+                  <span class="text-green fw-bold">17</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- card3 -->
+            <div class="card d-flex flex-column border-0">
+              <img src="./img/index-10.jpg" alt="work" width="100%" />
+              <div class="c-info d-flex flex-column text-start py-3">
+                <h4>
+                  <a href="#" class="text-green text-decoration-none">
+                    Coworking Project
+                  </a>
+                </h4>
+                <time class="fw-light"> December 26, 2020 </time>
+
+                <p>
+                  Colour choice in logo design is critical. The colour you
+                  decide on to represent your business can greatly affect
+                  peoples perception of your business.
+                </p>
+                <div class="d-flex">
+                  <span class="material-symbols-outlined"> chat_bubble </span>
+                  <span class="text-green fw-bold">6</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="btn border-green text-green mx-2 px-5 p-3 fs-5 fw-bold border-3"
+          >
+            VIEW ALL BLOG POSTS
+          </button>
+        </div>
+      </section>
+
+      <!-- news -->
+      <section
+        class="news text-white d-flex flex-column text-center justify-content-start bg-white pb-5"
+      >
+        <div
+          class="contain d-flex flex-column justify-content-center align-items-center"
+        >
+          <div>
+            <h2 class="fs-1 fw-bold mt-5">NEWSLETTER</h2>
+            <hr class="mb-5 mt-4" />
+          </div>
+          <div class="news-p mx-2">
+            <p class="fs-5 fw-light mb-3">
+              Enter your email address to receive all news, updates on new
+              arrivals, special offers and other discount information.
+            </p>
+            <div
+              class="d-flex justify-content-center align-items-center flex-wrap"
+            >
+              <input
+                type="text"
+                placeholder="Your e-mail..."
+                class="bg-white border-0 rounded-2 mb-2"
+              />
+              <button
+                type="button"
+                class="btn btn-outline-light mx-2 px-5 p-3 bg-green first-btn fs-5 fw-bold mb-2"
+              >
+                SUBSCRIBE
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- testi -->
+
+      <section
+        class="testi text-black d-flex flex-column text-center justify-content-center bg-white pb-5"
+      >
+        <div
+          class="contain d-flex flex-column justify-content-center align-items-center"
+        >
+          <div>
+            <h2 class="fs-1 fw-bold mt-5">TESTIMONIALS</h2>
+            <hr class="mb-5 mt-4" />
+          </div>
+
+          <div class="bg-white h-75 w-75 m-auto">
+            <div class="testimonials m-auto">
+              <input
+                type="radio"
+                name="testimonial"
+                id="input-testimonial1"
+                checked
+              />
+              <input type="radio" name="testimonial" id="input-testimonial2" />
+              <input type="radio" name="testimonial" id="input-testimonial3" />
+              <input type="radio" name="testimonial" id="input-testimonial4" />
+
+              <div class="testimonials-inner">
+                <div class="testimonial p-0 px-sm-4 pt-5">
+                  <div class="testimonial-photo">
+                    <div class="photo-background"></div>
+                    <div class="photo-author"></div>
+                  </div>
+                  <div class="testimonial-text">
+                    <p>
+                      Wait a second... you're telling me this testimonials
+                      slider is powered solely by CSS? That's some next-level
+                      web wizardry! I'm sold! Give me that mind-blowing slider
+                      to my website!
+                    </p>
+                  </div>
+                  <div class="testimonial-author">Henry Schwengle</div>
+                </div>
+
+                <div class="testimonial pt-5">
+                  <div class="testimonial-photo">
+                    <div class="photo-background"></div>
+                    <div class="photo-author"></div>
+                  </div>
+                  <div class="testimonial-text">
+                    <p>
+                      The older I get, the more I understand why roosters just
+                      scream to start the day.
+                    </p>
+                  </div>
+                  <div class="testimonial-author">Mr. George Robert</div>
+                </div>
+
+                <div class="testimonial pt-5">
+                  <div class="testimonial-photo">
+                    <div class="photo-background"></div>
+                    <div class="photo-author">
+                      <img
+                        src="./img/index-12.jpg"
+                        alt="women"
+                        class="rounded-circle"
+                      />
+                    </div>
+                  </div>
+                  <div class="testimonial-text">
+                    <p>
+                      "Thanks a lot for the quick response. I was really
+                      impressed, your solution is excellent! Your competence is
+                      justified!"
+                    </p>
+                  </div>
+                  <div class="testimonial-author">Sharon Willis</div>
+                </div>
+
+                <div class="testimonial pt-5">
+                  <div class="testimonial-photo">
+                    <div class="photo-background"></div>
+                    <div class="photo-author">
+                      <img
+                        src="./img/index-13.jpg"
+                        alt="man"
+                        class="rounded-circle"
+                      />
+                    </div>
+                  </div>
+                  <div class="testimonial-text">
+                    <p>
+                      "I just don't know how to describe your services... They
+                      are extraordinary! I am quite happy with them! Just keep
+                      up going this way!"
+                    </p>
+                  </div>
+                  <div class="testimonial-author">Jack Wilson</div>
+                </div>
+              </div>
+
+              <div class="testimonials-arrows">
+                <div class="arrow arrow-left">
+                  <label for="input-testimonial1"></label>
+                  <label for="input-testimonial2"></label>
+                  <label for="input-testimonial3"></label>
+                  <label for="input-testimonial4"></label>
+                  <span></span>
+                </div>
+                <div class="arrow arrow-right">
+                  <label for="input-testimonial1"></label>
+                  <label for="input-testimonial2"></label>
+                  <label for="input-testimonial3"></label>
+                  <label for="input-testimonial4"></label>
+                  <span></span>
+                </div>
+              </div>
+              <div class="testimonials-bullets">
+                <label for="input-testimonial1">
+                  <div class="bullet">
+                    <div>
+                      <span></span>
+                    </div>
+                  </div>
+                </label>
+                <label for="input-testimonial2">
+                  <div class="bullet">
+                    <div>
+                      <span></span>
+                    </div>
+                  </div>
+                </label>
+                <label for="input-testimonial3">
+                  <div class="bullet">
+                    <div>
+                      <span></span>
+                    </div>
+                  </div>
+                </label>
+                <label for="input-testimonial4">
+                  <div class="bullet">
+                    <div>
+                      <span></span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-secondary-subtle d-flex align-items-center flex-column justify-content-around py-4"
+    >
+      <div id="logo">
+        <svg
+          class="text-logo"
+          width="130px"
+          height="36px"
+          viewBox="0 0 130 36"
+          shape-rendering="geometricPrecision"
+        >
+          <text
+            style="fill: #1c202b61; font-family: Cursive"
+            transform="matrix(1 0 0 1 -0.5197 33.4432)"
+            font-family="Pacifico"
+            font-size="36px"
+          >
+            Vector
+          </text>
+          <text
+            style="
+              fill: #1c202b60;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+            "
+            transform="matrix(1 0 0 1 68 11.125)"
+            font-family="Montserrat"
+            font-size="14"
+            letter-spacing="1"
+          >
+            GRAND
+          </text>
+          <path
+            style="stroke: #fff; fill: transparent; font-size: 2"
+            class="logo"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            stroke-linecap="round"
+            d="M95.313,25.564c9.022-6.656,20.032-9.736,30-5"
+          ></path>
+        </svg>
+      </div>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon2"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0 0 32 32"
+        >
+          <path
+            d="M 19.253906 2 C 15.311906 2 13 4.0821719 13 8.8261719 L 13 13 L 8 13 L 8 18 L 13 18 L 13 30 L 18 30 L 18 18 L 22 18 L 23 13 L 18 13 L 18 9.671875 C 18 7.884875 18.582766 7 20.259766 7 L 23 7 L 23 2.2050781 C 22.526 2.1410781 21.144906 2 19.253906 2 z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0 0 32 32"
+        >
+          <path
+            d="M 28 8.558594 C 27.117188 8.949219 26.167969 9.214844 25.171875 9.332031 C 26.1875 8.722656 26.96875 7.757813 27.335938 6.609375 C 26.386719 7.171875 25.332031 7.582031 24.210938 7.804688 C 23.3125 6.847656 22.03125 6.246094 20.617188 6.246094 C 17.898438 6.246094 15.691406 8.453125 15.691406 11.171875 C 15.691406 11.558594 15.734375 11.933594 15.820313 12.292969 C 11.726563 12.089844 8.097656 10.128906 5.671875 7.148438 C 5.246094 7.875 5.003906 8.722656 5.003906 9.625 C 5.003906 11.332031 5.871094 12.839844 7.195313 13.722656 C 6.386719 13.695313 5.628906 13.476563 4.964844 13.105469 C 4.964844 13.128906 4.964844 13.148438 4.964844 13.167969 C 4.964844 15.554688 6.660156 17.546875 8.914063 17.996094 C 8.5 18.109375 8.066406 18.171875 7.617188 18.171875 C 7.300781 18.171875 6.988281 18.140625 6.691406 18.082031 C 7.316406 20.039063 9.136719 21.460938 11.289063 21.503906 C 9.605469 22.824219 7.480469 23.609375 5.175781 23.609375 C 4.777344 23.609375 4.386719 23.585938 4 23.539063 C 6.179688 24.9375 8.765625 25.753906 11.546875 25.753906 C 20.605469 25.753906 25.558594 18.25 25.558594 11.742188 C 25.558594 11.53125 25.550781 11.316406 25.542969 11.105469 C 26.503906 10.410156 27.339844 9.542969 28 8.558594 Z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0 0 32 32"
+        >
+          <path
+            d="M 16.09375 4 C 11.01675 4 6 7.3833281 6 12.861328 C 6 16.344328 7.9584844 18.324219 9.1464844 18.324219 C 9.6364844 18.324219 9.9199219 16.958266 9.9199219 16.572266 C 9.9199219 16.112266 8.7460938 15.131797 8.7460938 13.216797 C 8.7460938 9.2387969 11.774359 6.4199219 15.693359 6.4199219 C 19.063359 6.4199219 21.556641 8.3335625 21.556641 11.851562 C 21.556641 14.478563 20.501891 19.40625 17.087891 19.40625 C 15.855891 19.40625 14.802734 18.516234 14.802734 17.240234 C 14.802734 15.370234 16 13.558906 16 11.628906 C 16 8.3529063 11.462891 8.94725 11.462891 12.90625 C 11.462891 13.73725 11.5665 14.657063 11.9375 15.414062 C 11.2555 18.353063 10 23.037406 10 26.066406 C 10 27.001406 10.133656 27.921422 10.222656 28.857422 C 10.390656 29.045422 10.307453 29.025641 10.564453 28.931641 C 13.058453 25.517641 12.827078 24.544172 13.955078 20.076172 C 14.564078 21.234172 16.137766 21.857422 17.384766 21.857422 C 22.639766 21.857422 25 16.736141 25 12.119141 C 25 7.2061406 20.75475 4 16.09375 4 z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          x="0px"
+          y="0px"
+          width="24"
+          height="24"
+          viewBox="0 0 64 64"
+        >
+          <path
+            d="M52.979,21.979c-0.196,4.198-3.188,9.944-8.974,17.239C38.023,46.838,32.96,50.648,28.82,50.648	c-2.565,0-4.737-2.321-6.508-6.961c-1.184-4.253-2.367-8.508-3.551-12.762c-1.316-4.638-2.728-6.961-4.239-6.961	c-0.33,0-1.481,0.68-3.452,2.031L9,23.383c2.174-1.87,4.314-3.738,6.422-5.61c2.897-2.453,5.071-3.742,6.519-3.872	c3.425-0.323,5.533,1.971,6.323,6.882c0.854,5.298,1.448,8.593,1.778,9.883c0.986,4.396,2.075,6.589,3.26,6.589	c0.92,0,2.306-1.426,4.149-4.277s2.829-5.02,2.963-6.51c0.262-2.46-0.724-3.694-2.963-3.694c-1.054,0-2.141,0.238-3.256,0.706	c2.163-6.941,6.294-10.312,12.393-10.12C51.109,13.49,53.24,16.363,52.979,21.979z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0 0 32 32"
+        >
+          <path
+            d="M 16.003906 14.0625 L 16.003906 18.265625 L 21.992188 18.265625 C 21.210938 20.8125 19.082031 22.636719 16.003906 22.636719 C 12.339844 22.636719 9.367188 19.664063 9.367188 16 C 9.367188 12.335938 12.335938 9.363281 16.003906 9.363281 C 17.652344 9.363281 19.15625 9.96875 20.316406 10.964844 L 23.410156 7.867188 C 21.457031 6.085938 18.855469 5 16.003906 5 C 9.925781 5 5 9.925781 5 16 C 5 22.074219 9.925781 27 16.003906 27 C 25.238281 27 27.277344 18.363281 26.371094 14.078125 Z"
+          ></path>
+        </svg>
+        <svg
+          fill="#000000"
+          class="icon2"
+          height="20px"
+          width="20px"
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 365.892 365.892"
+          xml:space="preserve"
+          transform="rotate(45)"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <g>
+              <circle cx="182.945" cy="286.681" r="41.494"></circle>
+              <path
+                d="M182.946,176.029c-35.658,0-69.337,17.345-90.09,46.398c-5.921,8.288-4.001,19.806,4.286,25.726 c3.249,2.321,6.994,3.438,10.704,3.438c5.754,0,11.423-2.686,15.021-7.724c13.846-19.383,36.305-30.954,60.078-30.954 c23.775,0,46.233,11.571,60.077,30.953c5.919,8.286,17.437,10.209,25.726,4.288c8.288-5.92,10.208-17.438,4.288-25.726 C252.285,193.373,218.606,176.029,182.946,176.029z"
+              ></path>
+              <path
+                d="M182.946,106.873c-50.938,0-99.694,21.749-133.77,59.67c-6.807,7.576-6.185,19.236,1.392,26.044 c3.523,3.166,7.929,4.725,12.32,4.725c5.051-0.001,10.082-2.063,13.723-6.116c27.091-30.148,65.849-47.439,106.336-47.439 s79.246,17.291,106.338,47.438c6.808,7.576,18.468,8.198,26.043,1.391c7.576-6.808,8.198-18.468,1.391-26.043 C282.641,128.621,233.883,106.873,182.946,106.873z"
+              ></path>
+              <path
+                d="M360.611,112.293c-47.209-48.092-110.305-74.577-177.665-74.577c-67.357,0-130.453,26.485-177.664,74.579 c-7.135,7.269-7.027,18.944,0.241,26.079c3.59,3.524,8.255,5.282,12.918,5.281c4.776,0,9.551-1.845,13.161-5.522 c40.22-40.971,93.968-63.534,151.344-63.534c57.379,0,111.127,22.563,151.343,63.532c7.136,7.269,18.812,7.376,26.08,0.242 C367.637,131.238,367.745,119.562,360.611,112.293z"
+              ></path>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <span class="fw-light text-body-tertiary fs-6 pt-4"
+        >© 2023 All Rights Reserved Terms of Use and Privacy Policy</span
+      >
+    </footer>
+  </body>
+  
+</html>

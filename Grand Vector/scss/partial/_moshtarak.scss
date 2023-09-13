@@ -1,0 +1,311 @@
+body {
+  color: $white;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+
+  .navbar {
+    width: 100%;
+
+    li {
+      list-style-type: none;
+      cursor: pointer;
+
+      &:hover ul {
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+      span {
+        color: $white;
+
+        &::after {
+          content: "\f078";
+          margin-left: 5px;
+          display: inline-block;
+          font-size: 10px;
+          font-family: "FontAwesome";
+          transition: 0.5s;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    ul.pages {
+      li {
+        padding-left: 0%;
+      }
+
+      li::before {
+        content: "\f0da";
+        display: inline-block;
+        font-size: 14px;
+        font-family: "fontAwesome";
+      }
+    }
+  }
+}
+
+main {
+  width: 100%;
+  min-height: max-content;
+
+  .advantage {
+    background: $white;
+    width: 100%;
+    min-height: 100vh;
+    height: max-content;
+    color: $black;
+    max-width: 100%;
+
+    .contain {
+      width: 80%;
+      min-height: 100%;
+      background: $white;
+
+      h2 {
+        letter-spacing: 0.06em;
+      }
+
+      hr {
+        width: 100px;
+        margin: auto;
+        color: $hr;
+        border-bottom: 2px solid $hr;
+      }
+
+      .cards {
+        height: max-content;
+        box-sizing: border-box;
+        .card {
+          box-sizing: border-box;
+          // padding: 20px;
+          min-height: 55vh;
+          height: max-content;
+
+          h4 {
+            letter-spacing: 0.06em;
+          }
+
+          span {
+            width: 120px;
+            height: 120px;
+            font-size: 60px;
+            display: inline-block;
+            position: relative;
+            line-height: 120px;
+            margin-bottom: 70px;
+          }
+
+          span:before {
+            font-family: "FontAwesome";
+            position: relative;
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            font-style: normal;
+            text-transform: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: $light-green;
+          }
+
+          .fa-edit:before,
+          .fa-pencil-square-o:before {
+            content: "\f044";
+            font-family: "FontAwesome";
+          }
+
+          span:hover:after {
+            transform: rotate(-90deg);
+          }
+
+          span:after {
+            content: "\f044";
+            font-family: "FontAwesome";
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            border: 1px solid $light-gray;
+            transition: 0.4s;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+
+  .company {
+    max-width: 100%;
+    min-height: 110vh;
+    height: max-content;
+    background-color: $btn-hover;
+
+    .contain {
+      min-height: 95vh;
+      height: max-content;
+      background: $btn-hover;
+      margin: 0;
+
+      h2 {
+        letter-spacing: 0.06em;
+      }
+
+      hr {
+        width: 100px;
+        margin: auto;
+        color: $hr;
+        border-bottom: 2px solid $hr;
+      }
+
+      button:hover {
+        background-color: $light-green;
+        color: $white !important;
+        border-color: $light-green;
+      }
+    }
+  }
+
+  .counters {
+    min-height: 55vh;
+    height: max-content;
+    max-width: 100%;
+
+    hr {
+      width: 100px;
+      margin: auto;
+      color: $hr;
+      border-bottom: 2px solid $hr;
+    }
+    span {
+      font-size: 80px !important;
+    }
+  }
+
+  .client {
+    min-height: 55vh;
+    height: max-content;
+    width: 100%;
+
+    img {
+      max-width: 150px;
+      max-height: 150px;
+    }
+
+    hr {
+      width: 100px;
+      margin: auto;
+      color: $hr;
+      border-bottom: 2px solid $hr;
+    }
+  }
+
+  .posts {
+    min-height: 100vh;
+    height: max-content;
+    max-width: 100%;
+
+    hr {
+      width: 100px;
+      margin: auto;
+      color: $hr;
+      border-bottom: 2px solid $hr;
+    }
+    .card {
+      width: 370px;
+    }
+    button:hover {
+      background-color: $light-green;
+      color: $white;
+    }
+  }
+
+  .news {
+    background-image: url(../../img/index-11.jpg);
+    background-position: center;
+    min-height: 50vh;
+    height: max-content;
+    width: 100%;
+
+    hr {
+      width: 100px;
+      margin: auto;
+      color: $white;
+      border-bottom: 3px solid $white;
+    }
+    button:hover {
+      background-color: $btn-hover;
+      color: $white;
+      border-color: $btn-hover;
+    }
+    input {
+      padding: 12px 16px;
+      height: 63.6px;
+    }
+    .news-p {
+      max-width: 570px;
+    }
+  }
+
+  .testi {
+    min-height: 60vh;
+    height: max-content;
+    max-width: 100%;
+
+    hr {
+      width: 100px;
+      margin: auto;
+      color: $black;
+      border-bottom: 2px solid $black;
+    }
+    img {
+      width: 70px !important;
+      height: 70px !important;
+    }
+  }
+}
+
+footer {
+  height: 30vh;
+  max-height: max-content;
+  width: 100%;
+  img {
+    width: 24px;
+    opacity: 0.7;
+    &:hover {
+      color: $light-green;
+      transform: perspective();
+    }
+  }
+
+  .icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    &:hover {
+      fill: $light-green;
+    }
+  }
+  .icon2 {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    &:hover {
+      fill: $light-green;
+    }
+  }
+}

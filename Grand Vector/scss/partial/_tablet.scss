@@ -1,0 +1,50 @@
+@media (min-width: 768px) and (max-width: 992px) {
+  header {
+    .navbar {
+      z-index: 1000;
+      height: 20vh;
+
+      .navi {
+        width: 100% !important;
+      }
+
+      li {
+        display: block;
+
+        &:hover ul > li > a {
+          color: $light-green;
+        }
+
+        &:hover > span::after {
+          animation: moveup 1s;
+        }
+
+        ul.pages {
+          width: 100%;
+
+          li {
+            text-align: start;
+          }
+        }
+      }
+    }
+    .swiper-content {
+      height: 70vh;
+
+      & > div {
+        width: 80%;
+      }
+    }
+  }
+
+  i {
+    padding: 1px 15px;
+    cursor: pointer;
+  }
+
+  input {
+    right: 100% !important;
+    top: 0% !important;
+    margin: 0% !important;
+  }
+}
