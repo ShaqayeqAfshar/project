@@ -1,0 +1,52 @@
+$bg-btn: #ff5722;
+$black: #000000;
+$white: #ffffff;
+$bg-nav: #f8f8f8;
+$map-back: #f8f8f9;
+$nav-text-color: #545454;
+$h5: #9b9b9b;
+$font-1: 0.25rem;
+$font-2: 0.5rem;
+$font-3: 0.75rem;
+$font-4: 0.8rem;
+$font-5: 1rem;
+
+
+.bg-black{
+  background-color: $black;
+}
+.nav-color {
+  color: $nav-text-color;
+}
+.bg-btn {
+  background-color: $bg-btn !important;
+}
+.bg-nav {
+  background-color: $bg-nav;
+}
+.font-1 {
+  font-size: $font-1;
+}
+.font-2 {
+  font-size: $font-2;
+}
+.font-3 {
+  font-size: $font-3;
+}
+.font-4 {
+  font-size: $font-4;
+}
+.font-5 {
+  font-size: $font-5;
+}
+.opacity-1{
+  opacity: 1 !important;
+}
+.flex-1 {
+  flex: 1;
+}
+.imging{
+  max-width: 100%;
+  min-width: 279px;
+  min-height: 170px;
+}

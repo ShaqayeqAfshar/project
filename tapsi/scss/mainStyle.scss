@@ -1,0 +1,37 @@
+
+
+@font-face {
+    font-family: "iransans";
+    src: url(../library/font/sans/Sans\ a4fran3.ttf);
+  }
+
+  
+* {
+    font-family: "iransans";
+    box-sizing: border-box;
+  }
+
+
+/*variables::begin*/
+@import "./partial/variables";
+/*variables::end*/
+
+
+
+/*header::begin*/
+@import "./partial/header";
+/*header::end*/
+
+
+
+/*main::begin*/
+@import "./partial/main";
+/*main::end*/
+
+
+
+/*footer::start*/
+@import "./partial/footer";
+/*footer::end*/
+
+

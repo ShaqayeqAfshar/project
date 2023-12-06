@@ -1,0 +1,93 @@
+main {
+  width: 100%;
+  /*service:: start*/
+  .services {
+    height: 85vh;
+    .service {
+      img {
+        opacity: 0.5;
+      }
+      #Root {
+        > div {
+          flex: 1;
+        }
+      }
+    }
+  }
+  /*service:: end*/
+
+  /*khadamat:: start*/
+  .khadamat {
+    > p {
+      text-align: justify;
+    }
+
+    > button {
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+    .more-information {
+      color: $bg-btn;
+    }
+  }
+  /*khadamat:: END*/
+
+  /*parallax::start */
+  .parallax {
+    min-height: 25vh;
+    width: 100%;
+    background: url(../img/parallax.jpeg) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    p,
+    h3 {
+      color: $white;
+    }
+    .divar {
+      height: 50px;
+      width: 2px;
+      background-color: $white;
+    }
+    .parallax-div {
+      &:hover .parallax-p {
+        display: block;
+      }
+    }
+    .parallax-p {
+      display: none;
+    }
+  }
+  /*parallax::end*/
+
+  /*cards::start*/
+  .cards {
+    div.card-body {
+      > h5 {
+        color: $black;
+      }
+      > p {
+        color: $h5;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-align: justify;
+      }
+    }
+  }
+  /*cards::end*/
+
+  /*city::start*/
+  .city {
+    background: $map-back url(../img/map-back.svg) no-repeat;
+    min-height: 50vh;
+    max-height: max-content;
+    .city-div {
+      min-width: 12%;
+      max-width: max-content;
+    }
+  }
+  /*city::end*/
+}

@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "iransans";
+  src: url(../library/font/sans/Sans\ a4fran3.ttf);
+}
+* {
+  font-family: "iransans";
+  box-sizing: border-box;
+}
+
+/*variables::begin*/
+.nav-color {
+  color: #545454;
+}
+
+.bg-btn {
+  background-color: #ff5722 !important;
+}
+
+.bg-nav {
+  background-color: #f8f8f8;
+}
+
+.font-1 {
+  font-size: 0.25rem;
+}
+
+.font-2 {
+  font-size: 0.5rem;
+}
+
+.font-3 {
+  font-size: 0.75rem;
+}
+
+.font-4 {
+  font-size: 0.8rem;
+}
+
+
+
+.font-5 {
+  font-size: 1rem;
+}
+
+.opacity-1 {
+  opacity: 1 !important;
+}
+
+/*variables::end*/
+/*header::begin*/
+header {
+  width: 100%;
+  /*nav::begin*/
+  /*nav::end*/
+  /*app::begin*/
+  /*app::end*/
+}
+header nav {
+  z-index: 1030;
+}
+header nav .logo:hover .tapsi {
+  fill: #ff5722 !important;
+}
+header nav .logo:hover .tapsi-line {
+  fill: #000000 !important;
+}
+header nav .download-btn {
+  border: 1px solid #ff5722;
+  border-radius: 0.5rem;
+}
+header nav .download-btn p {
+  color: #ffffff !important;
+}
+header nav .download-btn:hover {
+  transform: scale(0.98);
+}
+header nav .nav-link:hover > p {
+  color: #ff5722;
+}
+header .app {
+  background-image: url(../img/header-desktop.webp);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+}
+header .app .app-form {
+  min-height: 330px;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  background-image: linear-gradient(51deg, rgba(23, 26, 60, 0.7) 5%, rgba(23, 26, 60, 0.3) 95%);
+}
+header .app .app-form a:hover > p {
+  opacity: 0.8;
+}
+header .app .app-form .app-btn {
+  width: 224px;
+}
+header .app .app-img {
+  left: 5%;
+  top: 15%;
+}
+
+/*header::end*/
+/*main::begin*/
+main {
+  width: 100%;
+  /*service:: start*/
+  /*service:: end*/
+  /*khadamat:: start*/
+  /*khadamat:: END*/
+  /*parallax::start */
+  /*parallax::end*/
+  /*cards::start*/
+  /*cards::end*/
+  /*city::start*/
+  /*city::end*/
+}
+main .service img {
+  opacity: 0.5;
+}
+main .service #Root > div {
+  flex: 1;
+}
+main .khadamat > p {
+  text-align: justify;
+}
+main .khadamat > button:hover {
+  opacity: 0.9;
+}
+main .khadamat .more-information {
+  color: #ff5722;
+}
+main .parallax {
+  min-height: 25vh;
+  width: 100%;
+  background: url(../img/parallax.jpeg) fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .parallax p,
+main .parallax h3 {
+  color: #ffffff;
+}
+main .parallax .divar {
+  height: 50px;
+  width: 2px;
+  background-color: #ffffff;
+}
+main .parallax .parallax-div:hover .parallax-p {
+  display: block;
+}
+main .parallax .parallax-p {
+  display: none;
+}
+main .cards div.card-body > h5 {
+  color: #9b9b9b;
+}
+main .cards div.card-body > p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+main .city {
+  background: #f8f8f9 url(../img/map-back.svg) no-repeat;
+  min-height: 50vh;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+main .city .city-div {
+  min-width: 12%;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+/*main::end*/
+/*footer::start*/
+footer {
+  background-color: var(--black);
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
+footer h3,
+footer p {
+  font-size: 12px;
+}
+footer p,
+footer i {
+  color: #9b9b9b;
+}
+footer .footer-brand {
+  text-align: justify;
+}
+footer .logos {
+  width: 100px;
+  height: 200px;
+}
+footer a:hover,
+footer i:hover {
+  color: #ff5722 !important;
+}
+
+/*footer::end*//*# sourceMappingURL=main.css.map */

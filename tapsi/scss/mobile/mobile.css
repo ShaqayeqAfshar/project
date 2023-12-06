@@ -1,0 +1,12 @@
+.app {
+  height: calc(100vh - 221px);
+}
+.app .app-form {
+  width: 270px;
+}
+.app .app-form .form-h1 {
+  font-size: 1.5rem;
+}
+.app .app-form .form-h2 {
+  font-size: 0.9rem;
+}/*# sourceMappingURL=mobile.css.map */
